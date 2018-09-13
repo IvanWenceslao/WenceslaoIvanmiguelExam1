@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exam1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/nasigorengheader"
+            style="@style/TextHeader"
+            android:layout_above="@+id/nasigorengdesc"
+            android:layout_alignStart="@+id/nasigorengdesc"
+            android:layout_marginBottom="-71dp"
+            android:text="Nasi Goreng"
+            />
+
+        <TextView
+            android:id="@+id/nasigorengdesc"
+            style="@style/TextDesc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="71dp"
+            android:text="a fragrant rice dish with chicken, prawns and shredded omelette topped"
+             />
+
+        <ImageView
+            android:id="@+id/nasigorengimg"
+            style="@style/Image"
+            android:layout_alignBottom="@+id/nasigorengdesc"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="21dp"
+            app:srcCompat="@drawable/nasigoreng" />
+
+        <TextView
+            android:id="@+id/miegorengheader"
+            style="@style/TextHeader"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/nasigorengdesc"
+            android:layout_marginTop="144dp"
+            android:text="Mie Goreng" />
+
+        <TextView
+            android:id="@+id/miegorengdesc"
+            style="@style/TextDesc"
+            android:layout_alignStart="@+id/nasigorengdesc"
+            android:layout_below="@+id/miegorengheader"
+            android:text="also known as bakmi goreng, Mie Goreng is a flavourful and often spicy fried noodle dish "
+            />
+
+        <ImageView
+            android:id="@+id/miegorengimg"
+            style="@style/Image"
+            android:layout_alignStart="@+id/nasigorengimg"
+            android:layout_alignTop="@+id/miegorengheader"
+            app:srcCompat="@drawable/miegoreng" />
+
+        <TextView
+            android:id="@+id/sambalheader"
+            style="@style/TextHeader"
+            android:layout_alignEnd="@+id/nasigorengheader"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="225dp"
+            android:text="Sambal"
+             />
+
+        <TextView
+            android:id="@+id/sambaldesc"
+            style="@style/TextDesc"
+            android:layout_alignStart="@+id/nasigorengdesc"
+            android:layout_below="@+id/sambalheader"
+            android:layout_marginTop="-225dp"
+            android:text="is a hot sauce or paste typically made from a mixture of a variety of chili peppers"
+             />
+
+        <ImageView
+            android:id="@+id/sambalimg"
+            style="@style/Image"
+            android:layout_alignStart="@+id/nasigorengimg"
+            android:layout_alignTop="@+id/sambalheader"
+            app:srcCompat="@drawable/sambal" />
+
+        <TextView
+            android:id="@+id/laksaheader"
+            style="@style/TextHeader"
+            android:layout_alignEnd="@+id/nasigorengheader"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="110dp"
+            android:text="Laksa"
+             />
+
+        <TextView
+            android:id="@+id/laksatext"
+            style="@style/TextDesc"
+            android:layout_alignStart="@+id/nasigorengdesc"
+            android:layout_below="@+id/laksaheader"
+            android:layout_marginTop="-110dp"
+            android:text="a spicy noodle consisting of of rice noodles or rice vermicelli with chicken, prawn or fish"
+             />
+
+        <ImageView
+            android:id="@+id/laksaimg"
+            style="@style/Image"
+            android:layout_alignStart="@+id/nasigorengimg"
+            android:layout_alignTop="@+id/laksaheader"
+            app:srcCompat="@drawable/laksa" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
